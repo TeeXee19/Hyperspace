@@ -341,7 +341,6 @@ ul {
 }
 
 section {
-	padding-top: 10px;
 	padding-bottom: 90px;
 	overflow: hidden;
 }
@@ -4993,7 +4992,12 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 
 .featured-4 {
 	height: 380px;
+	padding-top: 100px;
 
+}
+
+.wrapper{
+	background-size: 800px 489px;
 }
 
 }
@@ -5273,11 +5277,6 @@ padding-top: 40px;
 	margin-top: 0;
 }
 
-.section-2h{
-	width: 370px;
-	margin-left: -30px;
-	margin-bottom: 27px;
-}
 }
 
 /* Large Devices, Wide Screens */
@@ -9643,4 +9642,13 @@ text-align: center;
 
 color: #23374A;
 padding-top: 27px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.section-2h{
+font-size: 20px;
+line-height: 20px;
+padding-bottom: -20px;
+}
 }
