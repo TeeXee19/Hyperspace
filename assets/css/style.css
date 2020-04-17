@@ -10097,3 +10097,33 @@ letter-spacing: 0.01em;
 	display: none;
 }
 }
+
+.volunteer{
+	background: #F8F8F8;
+	padding: 50px;
+}
+
+.volunteer_content{
+	justify-content: center;
+	display: grid;
+	grid-template-columns: 59% 14%;
+}
+
+.volunteer_content_sub{
+	display: grid;
+	grid-auto-flow: row;
+}
+
+.volunteer_content_sub div h4{
+	font-size: 45px;
+
+	color: #23374A;
+
+}
+
+.volunteer_content_sub div p{
+	width: 708px;
+	text-align: justify;
+	overflow-wrap: break-word;
+	font-size: 23px;
+}
