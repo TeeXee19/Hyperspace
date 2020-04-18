@@ -122,7 +122,7 @@ h4,
 h5,
 h6 {
 	color: #282828;
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-weight: 700;
 	margin: 0 0 28px;
 	line-height: 1;
@@ -254,7 +254,7 @@ p {
 }
 
 .font-heading {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 }
 
 .font-body {
@@ -1049,7 +1049,7 @@ section {
 .blockquote,
 blockquot {
 	font-size: 20px;
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	color: #9b9b9b;
 	font-style: italic;
 	line-height: 28px;
@@ -1302,7 +1302,7 @@ blockquot {
     #BUTTONS
 \*------------------------------------*/
 .btn {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	position: relative;
 	z-index: 2;
 	font-size: 14px;
@@ -2063,7 +2063,7 @@ ul.dot-list li:before {
 }
 
 .accordion .card .card-heading a {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-size: 16px;
 	color: #0ECFAC;
 	font-weight: 600;
@@ -2222,7 +2222,7 @@ ul.dot-list li:before {
 }
 
 .alerts .alert-content p {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	color: #9b9b9b;
 	font-size: 12px;
 	font-weight: 500;
@@ -2648,7 +2648,7 @@ table tbody tr td {
 }
 
 .heading .heading--title {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-size: 36px;
 	font-weight: 600;
 	line-height: 45px;
@@ -2913,7 +2913,7 @@ table tbody tr td {
 }
 
 .navbar-nav > li > a {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-size: 14px;
 	text-transform: capitalize;
 	font-weight: 700;
@@ -3257,7 +3257,7 @@ ul.mega-menu li ul li {
 
 ul.dropdown-menu li a,
  ul.mega-menu li ul li a {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	line-height: 40px;
 	color: #9b9b9b;
 	padding: 0;
@@ -3785,7 +3785,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 .module--search-box .form-control {
 	position: relative;
 	color: #ffffff;
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-size: 45px;
 	font-weight: 400;
 	font-style: italic;
@@ -3920,7 +3920,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 
 .cart-total .total-desc,
 .cart-total .total-price {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1;
@@ -4387,7 +4387,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 }
 
 .top-bar .top--contact {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	line-height: 50px;
 	color: #cecece;
 	font-size: 12px;
@@ -4400,7 +4400,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 
 .top-bar .top--social {
 	color: #cecece;
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 50px;
@@ -4443,7 +4443,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 
 .slider .slide--headline {
 	color: #ffffff;
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-weight: 600;
 	line-height: 65px;
 	margin-bottom: 20px;
@@ -5472,7 +5472,7 @@ padding-top: 40px;
 }
 
 .blog-entry .entry--more a {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	color: #282828;
 	font-size: 14px;
 	font-weight: 700;
@@ -5534,7 +5534,7 @@ padding-top: 40px;
 }
 
 .entry--share .share--title {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	color: #222222;
 	font-size: 14px;
 	font-weight: 700;
@@ -5638,7 +5638,7 @@ padding-top: 40px;
 }
 
 .entry-prev-next a {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-size: 16px;
 	font-weight: 700;
 	color: #282828;
@@ -6548,7 +6548,7 @@ td.cart-product-quantity {
 }
 
 .single-product .product-quantity .qua {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	color: #282828;
 	font-size: 15px;
 	font-weight: 700;
@@ -6660,7 +6660,7 @@ td.cart-product-quantity {
 	color: #282828;
 	font-size: 14px;
 	font-weight: 700;
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	text-transform: capitalize;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -7214,7 +7214,7 @@ a.link--styled:hover {
 }
 
 .widget-recent-posts .entry .entry--title a {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	color: #282828;
 	font-size: 15px;
 	font-weight: 600;
@@ -7311,7 +7311,7 @@ a.link--styled:hover {
 }
 
 .widget-recent-products .product .product-title a {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	color: #282828;
 	font-size: 14px;
 	font-weight: 700;
@@ -7472,7 +7472,7 @@ a.link--styled:hover {
 
 .widget-info .info--title {
 	color: #ffffff;
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-size: 15px;
 	font-weight: 700;
 	line-height: 21px;
@@ -7593,7 +7593,7 @@ footer .widget-instagram .insta-hover i {
 	background: #0ECFAC;
 	border-radius: 2px;
 	padding: 20px;
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-size: 15px;
 	font-weight: 700;
 	color: #222;
@@ -7812,7 +7812,7 @@ footer .widget-instagram .insta-hover i {
 }
 
 .footer--widget-recent .entry--title a {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	color: #cecece;
 	font-size: 14px;
 	font-weight: 600;
@@ -7920,7 +7920,7 @@ footer .widget-links-inline ul li {
 	border-top: 2px solid rgba(71, 71, 71, 0.25);
 	padding: 30px 0;
 	font-size: 14px;
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 }
 
 .footer--copyright .payment--methods a {
@@ -9324,7 +9324,7 @@ footer .widget-newsletter form {
 }
 
 .consultation--desc {
-	font-family: 'Montserrat';
+	font-family: 'Poppins';
 	font-size: 32px;
 	font-weight: 600;
 	font-style: italic;
@@ -10301,5 +10301,9 @@ letter-spacing: 0.01em;
 @media (min-width: 720px){
 	.r_small{
 		display: none;
+}
+
+.r_big{
+		grid-template-columns: repeat(auto-fill, 500px);
 }
 }
