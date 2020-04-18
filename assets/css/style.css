@@ -2806,16 +2806,17 @@ table tbody tr td {
 
 /* Header Light */
 .header-light {
-	background-color: #ffffff;
+	background-color: #E7FCF8;
 }
 
 .header-light .navbar .logo-dark {
 	display: inline-block;
 }
 
-.header-light .navbar .logo-light {
-	display: none;
+.header-light .navbar-brand .logo {
+	line-height: 100px;
 }
+
 
 /* Header With Top Bar */
 .header-topbar {
@@ -2986,15 +2987,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 	box-shadow: none;
 }
 
-.header-light .navbar .module .module-icon i,
-.header-light .navbar .navbar-nav > li > a {
-	color: #222222;
-}
 
-.header-light .navbar .navbar-nav > li > .menu-item:hover::before,
-.header-light .navbar .navbar-nav > li.active > .menu-item:before {
-	background-color: #222222;
-}
 
 /* Navbar For Header Full */
 .header-full .navbar {
@@ -9639,14 +9632,16 @@ footer .widget-newsletter form {
 
 
 .section-2h{
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 45px;
-text-align: center;
-color: #23374A;
-padding-top: 27px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 45px;
+	text-align: center;
+	color: #23374A;
+	padding-top: 27px;
 }
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
@@ -9780,6 +9775,16 @@ letter-spacing: 0.01em;
 }
 .hiw_container{
 	padding-top: 0px; 
+}
+
+.resources_h {
+    position: relative;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 43px;
+    line-height: 45px;
+    color: #23374A;
+    padding: 30px 0px 0px 25px;
 }
 }
 
@@ -10226,4 +10231,38 @@ letter-spacing: 0.01em;
     font-size: 23px;
 }
 
+}
+
+.resources_h{
+	position: relative;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 50px;
+	line-height: 45px;
+	color: #23374A;
+	padding: 30px 0px 0px 40px;
+}
+
+.resources_sub_h{
+	font-style: normal;
+	font-size: 30px;
+	line-height: 45px;
+	text-align: center;
+	color: #23374A;
+	padding-top: 2%;
+}
+
+.resource_box{
+	 background: rgba(255, 255, 255, 0.95);
+	 box-shadow: 0px 20px 50px #E2F8CC;
+	 border-radius: 7px;
+	 padding: 30px;
+	 display: inline-flex;
+}
+
+.resource_box img{
+	width: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
