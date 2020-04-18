@@ -50,6 +50,7 @@ a {
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	color: #0ECFAC;
+	cursor: pointer;
 }
 
 a:hover {
@@ -7744,15 +7745,14 @@ footer .widget-instagram .insta-hover i {
 }
 
 .social-icons a {
-	width: 15px;
-	height: 15px;
+	width: 30px;
+	height: 20px;
 	color: #0ECFAC;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 28px;
 	margin-right: 24px;
 	text-align: center;
-	overflow: hidden;
 	float: left;
 	display: block;
 }
@@ -9664,7 +9664,7 @@ box-shadow: 0px 8px 8px #AEF0E4;
 background: #0ECFAC;
 border-radius: 10px;
 color: #ffffff;
-cursor: default;
+cursor: pointer;
 font-style: normal;
 font-weight: 600;
 font-size: 25px;
@@ -10126,4 +10126,104 @@ letter-spacing: 0.01em;
 	text-align: justify;
 	overflow-wrap: break-word;
 	font-size: 23px;
+}
+
+.v_btn{
+width: 250px;
+height: 65px;
+box-shadow: 0px 8px 8px #AEF0E4;
+background: #0ECFAC;
+border-radius: 10px;
+color: #ffffff;
+cursor: pointer;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 37px;
+/* identical to box height */
+letter-spacing: 0.01em;
+}
+
+@media (max-width: 320px) {
+
+.volunteer_content{
+	display: flex;
+}
+
+.volunteer_content img{
+	display: none;
+}
+
+.volunteer_content_sub{
+	display: grid;
+	grid-auto-flow: row;
+}
+
+.volunteer_content_sub div h4{
+	font-size: 32px;
+
+	color: #23374A;
+
+}
+
+.volunteer_content_sub div p{
+	width: 300px;
+	text-align: justify;
+	overflow-wrap: break-word;
+	font-size: 12px;
+}
+}
+
+@media only screen and (min-width: 350px) and (max-width: 700px) {
+
+.volunteer_content{
+	display: flex;
+}
+
+.volunteer_content img{
+	display: none;
+}
+
+.volunteer_content_sub{
+	display: grid;
+	grid-auto-flow: row;
+}
+
+.volunteer_content_sub div h4{
+	font-size: 32px;
+
+	color: #23374A;
+
+}
+
+.volunteer_content_sub div p{
+	width: 320px;
+	text-align: justify;
+	overflow-wrap: break-word;
+	font-size: 15px;
+}
+
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1200px) {
+
+.volunteer {
+    background: #F8F8F8;
+    padding: 61px;
+}
+
+.volunteer_content {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 64% 30%;
+}
+
+
+.volunteer_content_sub div p {
+    width: 400px;
+    text-align: justify;
+    overflow-wrap: break-word;
+    font-size: 23px;
+}
+
 }
