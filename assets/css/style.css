@@ -2948,7 +2948,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 
 .navbar-toggler {
 	padding: 4px 10px;
-	background-color: transparent;
+	background-color: #0ECFAC;
 	border: 1px solid transparent;
 	border-radius: 0;
 	margin-right: 15px;
@@ -3016,7 +3016,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 }
 
 .navbar-light .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,225, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-dark .navbar-toggler {
@@ -9982,6 +9982,12 @@ letter-spacing: 0.01em;
     text-decoration: none;
 }
 
+.connections a i {
+        font-size: 25px;
+        float: right;
+        margin-right: 6px;
+    }
+
 .connections .mail {
     color: black;
     text-decoration: underline;
@@ -10040,6 +10046,7 @@ letter-spacing: 0.01em;
  }
  .byelaws ul {
     list-style: none;  
+    padding: 0px;
  }
  .byelaws li {
     display: inline-block;
@@ -10058,7 +10065,7 @@ letter-spacing: 0.01em;
         font-size: 14px;
         text-decoration: none;
     } 
-    .fab {
+    .connections a i {
         font-size: 25px;
         float: right;
         margin-right: 6px;
@@ -10105,6 +10112,7 @@ letter-spacing: 0.01em;
      }
      .byelaws ul {
         list-style: none;
+        padding: 0px;
 
      }
      .byelaws li {
