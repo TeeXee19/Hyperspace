@@ -9158,7 +9158,7 @@ color: #ffffff;
 cursor: pointer;
 font-style: normal;
 font-weight: 600;
-font-size: 25px;
+font-size: 32px;
 line-height: 37px;
 /* identical to box height */
 letter-spacing: 0.01em;
@@ -9211,7 +9211,7 @@ color: #23374A;
 width: 150px;
 height: 65px;
 font-weight: 300;
-font-size: 25px;
+font-size: 23px;
 line-height: 37px;
 /* identical to box height */
 letter-spacing: 0.01em;
@@ -9361,6 +9361,12 @@ letter-spacing: 0.01em;
 	padding: 40px;
 }
 
+.box:hover{
+	 -webkit-transition: all .8s ease-in-out;
+	   -webkit-transform: scale(1.08);
+}
+
+
 .box div p{
 	text-align: justify;
 	font-size: 22px;
@@ -9418,6 +9424,7 @@ letter-spacing: 0.01em;
 .box{
 	padding: 10px;
 }
+
 
 .inner{
 	padding-top: 7px;
@@ -9627,11 +9634,11 @@ letter-spacing: 0.01em;
 
 }
 
-.volunteer_content_sub div p{
-	width: 708px;
-	text-align: justify;
-	overflow-wrap: break-word;
-	font-size: 23px;
+.volunteer_content_sub div p {
+    width: 675px;
+    text-align: justify;
+    overflow-wrap: break-word;
+    font-size: 24px;
 }
 
 .v_btn{
@@ -9715,7 +9722,7 @@ letter-spacing: 0.01em;
 
 .volunteer {
     background: #F8F8F8;
-    padding: 61px;
+    padding: 74px;
 }
 
 .volunteer_content {
@@ -9732,6 +9739,11 @@ letter-spacing: 0.01em;
     font-size: 23px;
 }
 
+.faq {
+    background: #F8F8F8;
+    padding: 32px;
+}
+
 }
 
 .resources_h{
@@ -9741,7 +9753,7 @@ letter-spacing: 0.01em;
 	font-size: 50px;
 	line-height: 45px;
 	color: #23374A;
-	padding: 30px 0px 0px 40px;
+	padding: 33px 0px 0px 70px;
 }
 
 .resources_sub_h{
@@ -9781,7 +9793,7 @@ letter-spacing: 0.01em;
 
 .resources_h{
     font-size: 44px;
-    padding: 26px 0px 0px 18px;}
+    padding: 29px 0px 0px 18px;}
 
 .resource_box{
 	 background: rgba(255, 255, 255, 0.95);
@@ -9799,15 +9811,36 @@ letter-spacing: 0.01em;
 
 }
 
-@media (min-width: 720px){
+@media only screen and (min-width: 720px) and (max-width: 1000px){
 	.r_small{
-		display: none;
+		grid-template-columns: 390px;
+		grid-template-rows: repeat(2, 300px);
+	}
+
+	.r_big{
+			display: none;
+	}
+
+	.resources_h{
+	    font-size: 44px;
+	    padding: 29px 0px 0px 18px;}
+
+	.resource_box{
+		 background: rgba(255, 255, 255, 0.95);
+		 box-shadow: 0px 20px 50px #E2F8CC;
+		 border-radius: 7px;
+		 padding: 10px;
+		 display: grid;
+	}
+
+	.r_small div p {
+	    line-height: 16px;
+	    text-align: justify;
+	    font-size: 14px;
+	}
+
 }
 
-.r_big{
-		grid-template-columns: repeat(auto-fill, 500px);
-}
-}
 
 .about_h{
 	padding-top: 0px;
