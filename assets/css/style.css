@@ -9567,13 +9567,24 @@ letter-spacing: 0.01em;
     width: 600px;
     line-height: 120px;
     overflow-wrap: break-word;
-    font-size: 32px;
+    font-size: 30px;
     list-style: none;
 }
 
 .l_inner{
-	margin-left: -69px;
+	margin-left: -71px;
 }
+
+/*.l_inner_i{
+	line-height: 32px;
+	margin-top: 16px;
+}
+
+.l_inner_v{
+	line-height: 32px;
+	margin-top: 27px;
+}*/
+
 
 .l_outer{
 	margin-top: -27px;
@@ -9581,13 +9592,15 @@ letter-spacing: 0.01em;
 }
 
 
+
+
 @media (max-width: 700px){
 	.schedule div ul li{
 	color: #23374A;
-    width: 297px;
+    width: 305px;
     line-height: 60px;
     overflow-wrap: break-word;
-    font-size: 24px;
+    font-size: 16px;
     list-style: initial;
 }
 
@@ -9595,8 +9608,18 @@ letter-spacing: 0.01em;
 	margin-left: 0px;
 }
 
+.l_inner_i{
+	line-height: 21px;
+	margin-top: 3px;
+}
+
+.l_inner_v{
+	line-height: 22px;
+	margin-top: 11px;
+}
+
 .l_outer{
-	margin-top: 0px;
+	margin-top: -23px;
 	margin-left: 0px;
 }
 
@@ -10128,5 +10151,80 @@ letter-spacing: 0.01em;
         margin: 5px 2px;
         border-radius: 7px;
     }
+
+}
+
+
+#clockdiv{ 
+	color: #fff;
+    display: inline-grid;
+    font-weight: 10;
+    text-align: center;
+    font-size: 5px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 32px);
+    grid-template-rows: 40px;
+    grid-gap: 5px;
+} 
+#clockdiv > div{ 
+	padding: 2px;
+    border-radius: 3px;
+    background: #00BF96;
+} 
+#clockdiv div > span{ 
+	padding: 6px; 
+	border-radius: 1px; 
+	background: #00816A; 
+	display: inline-grid; 
+} 
+.smalltext{ 
+	font-size: 8px;
+    margin-bottom: 0px;
+    color: #fff;
+    margin-top: -24px;
+} 
+
+.clock_d{
+	height: 26px; 
+	color: #fff; 
+	padding: 2px; 
+	border-radius: 1px; 
+	background: #00816A; 
+}
+
+@media (min-width: 700px)
+{
+	#clockdiv{ 
+	color: #fff;
+    display: inline-grid;
+    font-weight: 10;
+    text-align: center;
+    font-size: 5px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4,56px);
+    grid-template-rows: 48px;
+    grid-gap: 10px;
+} 
+#clockdiv > div{ 
+	padding: 2px;
+    border-radius: 3px;
+    background: #00BF96;
+} 
+
+.smalltext{ 
+	font-size: 11px;
+    margin-bottom: 0px;
+    color: #fff;
+    margin-top: -24px;
+} 
+
+.clock_d{
+	height: 26px; 
+	color: #fff; 
+	padding: 2px; 
+	border-radius: 1px; 
+	background: #00816A; 
+	font-size: 20px;
+}
 
 }
