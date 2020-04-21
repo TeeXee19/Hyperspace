@@ -7621,6 +7621,16 @@ footer .widget-newsletter form {
 .footer--widget-recent .entry {
 	margin-bottom: 10px;
 }
+
+.footer-widget .widget-about img {
+	width: 185px;
+}
+
+.footer-widget .widget-title h5 {
+	visibility: hidden;
+}
+
+
 }
 
 /* Small Devices, Tablets */
@@ -9595,6 +9605,11 @@ letter-spacing: 0.01em;
 
 
 @media (max-width: 700px){
+
+	#l_inner_r{
+	width: 359px;
+	}  
+
 	.schedule div ul li{
 	color: #23374A;
     width: 305px;
@@ -9617,6 +9632,8 @@ letter-spacing: 0.01em;
 	line-height: 22px;
 	margin-top: 11px;
 }
+
+
 
 .l_outer{
 	margin-top: -23px;
