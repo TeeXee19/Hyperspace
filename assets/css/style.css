@@ -9212,15 +9212,15 @@ letter-spacing: 0.03em;
 width: 300px;
 height: 80px;
 font-weight: normal;
-font-size: 22px;
-line-height: 33px;
+font-size: 19px;
+line-height: 25px;
 color: #23374A;
+padding-top: 20px;
 }
 
 .l_btn{
 width: 150px;
-height: 65px;
-font-weight: 300;
+height: 48px;
 font-size: 23px;
 line-height: 37px;
 /* identical to box height */
