@@ -240,7 +240,12 @@
 
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-          new Noty({ text: 'SUCCESS', }).show();
+          new Noty({
+                theme: 'bootstrap-v4',
+                type: 'success',
+                layout: 'center',
+                text: 'Registration Successful!'
+            }).show();
           setTimeout( () => {
               window.location.replace("index.html")
           }, 3000)
