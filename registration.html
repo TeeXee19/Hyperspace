@@ -25,6 +25,9 @@
 <link rel="stylesheet" type="text/css" href="assets/revolution/css/navigation.css">
 <!-- <link rel="stylesheet" type="text/css" href="assets/css/library/bootstrap.css">  -->
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js" type="text/javascript"></script>
+
 
     <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
     <script type="text/javascript" src="assets/jquery.min.js"></script>
@@ -104,13 +107,15 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <h3 class="register-heading">Apply as an Individual</h3>
-                                <div class="row register-form">
+
+                            <form name="submit-to-google-sheet" >
+                                <div  class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                            <input  name="firstName" type="text" class="form-control" placeholder="First Name *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                            <input name="lastName" type="text" class="form-control" placeholder="Last Name *" value="" />
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control" placeholder="Password *" value="" />
@@ -133,7 +138,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                            <input name="email" type="email" class="form-control" placeholder="Your Email *" value="" />
                                         </div>
                                         <div class="form-group">
                                             <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
@@ -151,6 +156,7 @@
                                         </div>
                                         <input type="submit" class="btnRegister"  value="Register"/>
                                     </div>
+                                    </form>
                                 </div>
                             </div>
                             <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -190,7 +196,7 @@
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="`Answer *" value="" />
                                         </div>
-                                        <input type="submit" class="btnRegister"  value="Register"/>
+                                        <input type="submit" class="btn btnRegister"  value="Register"/>
                                     </div>
                                 </div>
                             </div>
@@ -220,6 +226,29 @@
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/functions.js"></script>
+
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbweHWPlCi4wqwnVHipA1CdzYRovg5LU-j1BpNrASjUDJdBoAY8/exec'
+  const form = document.forms['submit-to-google-sheet']
+    
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          new Noty({ text: 'SUCCESS', }).show();
+          setTimeout( () => {
+              window.location.replace("index.html")
+          }, 3000)
+          console.log('Success!', response)
+        })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 </body>
 </html>
