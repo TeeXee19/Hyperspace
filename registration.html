@@ -161,10 +161,12 @@
                             </div>
                             <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <h3  class="register-heading">Apply as a Team</h3>
+                
+                                <form name="team-to-google-sheet">
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                            <input name="teamName" type="text" class="form-control" placeholder="Team Name *" value="" />
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Last Name *" value="" />
@@ -186,9 +188,9 @@
                                             <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <select class="form-control">
-                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
-                                                <option>What is your Birthdate?</option>
+                                            <select name="location" class="form-control">
+                                                <option class="hidden"  selected disabled>Location</option>
+                                                <option>Ajah</option>
                                                 <option>What is Your old Phone Number</option>
                                                 <option>What is your Pet Name?</option>
                                             </select>
@@ -196,8 +198,9 @@
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="`Answer *" value="" />
                                         </div>
-                                        <input type="submit" class="btn btnRegister"  value="Register"/>
+                                        <input type="submit" class="btnRegister"  value="Register"/>
                                     </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +237,7 @@
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbweHWPlCi4wqwnVHipA1CdzYRovg5LU-j1BpNrASjUDJdBoAY8/exec'
   const form = document.forms['submit-to-google-sheet']
-    
+
   form.addEventListener('submit', e => {
     e.preventDefault()
 
@@ -252,8 +255,33 @@
           console.log('Success!', response)
         })
       .catch(error => console.error('Error!', error.message))
+    
   })
 </script>
 
+<script>
+  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbxDafS65iL32cApTpI8Ngd9YmQX2nJ0lGKxsCrX4EDu0LrlPdPq/exec'
+  const form2 = document.forms['team-to-google-sheet']
+
+  form2.addEventListener('submit', e => {
+    e.preventDefault()
+
+    fetch(scriptURL2, { method: 'POST', body: new FormData(form2)})
+      .then(response => {
+          new Noty({
+                theme: 'bootstrap-v4',
+                type: 'success',
+                layout: 'center',
+                text: 'Registration Successful!'
+            }).show();
+            setTimeout( () => {
+              window.location.replace("index.html")
+          }, 3000)
+          console.log('Success!', response)
+        })
+      .catch(error => console.error('Error!', error.message))
+    
+  })
+</script>
 </body>
 </html>
