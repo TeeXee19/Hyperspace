@@ -188,11 +188,9 @@
                                             <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <select name="location" class="form-control">
-                                                <option class="hidden"  selected disabled>Location</option>
-                                                <option>Ajah</option>
-                                                <option>What is Your old Phone Number</option>
-                                                <option>What is your Pet Name?</option>
+                                            <select class="form-control" id="locality-dropdown" name="locality">
+                                              
+                                               
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -283,5 +281,46 @@
     
   })
 </script>
+
+<script >
+let dropdown = document.getElementById('locality-dropdown');
+dropdown.length = 0;
+
+let defaultOption = document.createElement('option');
+defaultOption.text = 'Choose State';
+
+dropdown.add(defaultOption);
+dropdown.selectedIndex = 0;
+
+const url = 'https://api.jsonbin.io/b/5ea60ec998b3d537523511fe';
+
+fetch(url)  
+  .then(  
+    function(response) {  
+      if (response.status !== 200) {  
+        console.warn('Looks like there was a problem. Status Code: ' + 
+          response.status);  
+        return;  
+      }
+
+      // Examine the text in the response  
+      response.json().then(function(data) {  
+        let option;
+    
+        for (let i = 0; i < data.length; i++) {
+          option = document.createElement('option');
+          option.text = data[i].name;
+          option.value = data[i].abbreviation;
+          dropdown.add(option);
+        }    
+      });  
+    }  
+  )  
+  .catch(function(err) {  
+    console.error('Fetch Error -', err);  
+  });
+
+</script>
+
 </body>
 </html>
