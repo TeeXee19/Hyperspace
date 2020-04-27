@@ -186,7 +186,7 @@
                                             <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <select class="form-control" id="locality-dropdown" name="locality">
+                                            <select class="form-control" id="locality" name="locality">
                                               
                                                
                                             </select>
@@ -316,6 +316,45 @@ request.onerror = function() {
 };
 
 request.send();
+
+</script>
+
+<script >
+let dd = document.getElementById('locality');
+dd.length = 0;
+
+let dO = document.createElement('option');
+dO.text = 'Choose Location';
+
+dd.add(dO);
+dd.selectedIndex = 0;
+
+const lk = 'https://api.jsonbin.io/b/5ea60ec998b3d537523511fe';
+
+const req = new XMLHttpRequest();
+req.open('GET', lk , true);
+req.setRequestHeader("secret-key", "$2b$10$leL1Tlgg6aKQsP1esZsXs.a9zC0CMgSwa9815LGElaocXPOHZPfYG");
+
+req.onload = function() {
+  if (req.status === 200) {
+    const dt = JSON.parse(req.responseText);
+    let opt;
+    for (let i = 0; i < dt.length; i++) {
+      opt = document.createElement('option');
+      opt.text = dt[i].name;
+//      option.value = data[i].abbreviation;
+      dd.add(opt);
+    }
+   } else {
+    // Reached the server, but it returned an error
+  }   
+}
+
+req.onerror = function() {
+  console.error('An error occurred fetching the JSON from ' + lk);
+};
+
+req.send();
 
 </script>
 
