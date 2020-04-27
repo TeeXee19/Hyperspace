@@ -85,6 +85,7 @@
                             <!-- /.navbar-collapse -->
                             </div>
                         <!-- /.container -->
+                    </div>
                     </nav>
             </header>
 
@@ -138,17 +139,14 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input name="email" type="email" class="form-control" placeholder="Your Email *" value="" />
+                                            <input name="email" type="email" class="form-control" placeholder="Your Email " value="" required/>
                                         </div>
                                         <div class="form-group">
                                             <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <select class="form-control">
-                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
-                                                <option>What is your Birthdate?</option>
-                                                <option>What is Your old Phone Number</option>
-                                                <option>What is your Pet Name?</option>
+                                             <select class="form-control" id="locality-dropdown" name="locality">
+                                              
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -287,7 +285,7 @@ let dropdown = document.getElementById('locality-dropdown');
 dropdown.length = 0;
 
 let defaultOption = document.createElement('option');
-defaultOption.text = 'Choose State/Province';
+defaultOption.text = 'Choose Location';
 
 dropdown.add(defaultOption);
 dropdown.selectedIndex = 0;
