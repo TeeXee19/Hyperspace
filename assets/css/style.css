@@ -9802,9 +9802,9 @@ letter-spacing: 0.01em;
 }
 
 .resources_sub_h{
-	font-style: normal;
+	font-style: italics;
 	font-size: 23px;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 28px;
 	text-align: center;
 	color: #23374A;
