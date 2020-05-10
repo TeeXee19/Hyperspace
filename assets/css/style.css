@@ -9803,8 +9803,9 @@ letter-spacing: 0.01em;
 
 .resources_sub_h{
 	font-style: normal;
-	font-size: 30px;
-	line-height: 45px;
+	font-size: 23px;
+	font-weight: 600;
+	line-height: 28px;
 	text-align: center;
 	color: #23374A;
 	padding-top: 2%;
