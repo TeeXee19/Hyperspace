@@ -9303,20 +9303,19 @@ footer .widget-instagram .insta-hover i {
 
   .l_stuff_desc {
     width: 300px;
-    height: 80px;
+    height: 114px;
     font-weight: normal;
     font-size: 19px;
-    line-height: 25px;
+    line-height: 27px;
     color: #23374a;
     padding-top: 20px;
   }
 
   .l_btn {
-    width: 150px;
+    width: 149px;
     height: 48px;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 37px;
-    /* identical to box height */
     letter-spacing: 0.01em;
   }
 }
@@ -9396,17 +9395,17 @@ footer .widget-instagram .insta-hover i {
   }
 
   .hiw div p {
-    width: 352px;
+    width: auto;
     height: 246px;
     font-size: 15px;
-    padding-left: 26px;
+    padding-left: 10px;
     padding-top: 10px;
     line-height: 20px;
-    text-align: justify;
+    text-align: center;
   }
 
   .hiw_container {
-    padding-top: 0px;
+    padding: 10px;
   }
 }
 
