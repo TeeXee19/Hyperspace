@@ -9445,12 +9445,20 @@ footer .widget-instagram .insta-hover i {
   background-color: #ffffff;
 }
 
+.tracklist-subheader {
+  font-size: 25px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  line-height: normal;
+}
+
 .tracklist-subcontent {
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 575px);
-  grid-template-rows: repeat(2, 400px);
-  grid-gap: 91px 58px;
+  grid-template-columns: repeat(auto-fill, 500px);
+  grid-template-rows: repeat(2, 344px);
+  grid-gap: 58px 58px;
 }
 
 .box {
@@ -9464,7 +9472,7 @@ footer .widget-instagram .insta-hover i {
 
 .box div p {
   text-align: justify;
-  font-size: 22px;
+  font-size: 15px;
 }
 
 .box1 {
@@ -9499,13 +9507,13 @@ footer .widget-instagram .insta-hover i {
 }
 
 .t_title h4 {
-  font-size: 45px;
-  line-height: 67px;
+  font-size: 48px;
+  line-height: 40px;
   color: #23374a;
 }
 
 .inner {
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 @media (max-width: 320px) {
@@ -9513,6 +9521,10 @@ footer .widget-instagram .insta-hover i {
     grid-template-columns: repeat(auto-fit, 250px);
     grid-template-rows: repeat(4, 211px);
     grid-gap: 23px 58px;
+  }
+
+  .tracklist-subheader {
+    font-size: 15px;
   }
 
   .box {
@@ -9558,6 +9570,9 @@ footer .widget-instagram .insta-hover i {
     grid-gap: 23px 58px;
   }
 
+  .tracklist-subheader {
+    font-size: 19px;
+  }
   .box {
     padding: 10px;
   }
@@ -9596,16 +9611,16 @@ footer .widget-instagram .insta-hover i {
 
 @media only screen and (min-width: 760px) and (max-width: 1200px) {
   .box {
-    padding: 20px;
+    padding: 18px;
   }
 
   .box div p {
     text-align: justify;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .inner {
-    padding-top: 13px;
+    padding-top: 0px;
   }
 
   .box-content {
@@ -9615,13 +9630,17 @@ footer .widget-instagram .insta-hover i {
 
   .box-content img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
   }
 
   .tracklist-subcontent {
-    grid-template-columns: repeat(2, 346px);
-    grid-template-rows: repeat(2, 350px);
-    grid-gap: 70px 43px;
+    grid-template-columns: repeat(2, 324px);
+    grid-template-rows: repeat(2, 303px);
+    grid-gap: 57px 43px;
+  }
+
+  .tracklist-subheader {
+    font-size: 20px;
   }
 
   .t_title {
@@ -9632,6 +9651,7 @@ footer .widget-instagram .insta-hover i {
     padding-top: 20px;
     font-size: 32px;
     line-height: 37px;
+    margin: 0;
   }
 }
 
